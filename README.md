@@ -1,0 +1,2 @@
+this is a skin lesion classification to predict the disease, we are using harmonized dermoscopic image dataset for multiclass class  skin lesion classification from HAM1000 and ISIC datasets from kaggle.
+Dataset description: 34718 images with 7 classes
