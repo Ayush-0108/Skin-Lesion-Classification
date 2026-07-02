@@ -1,6 +1,6 @@
 import tensorflow as tf
 from tensorflow import keras
-train_ds, validation_ds = keras.utils.image_dataset_from_directory(
+ds = keras.utils.image_dataset_from_directory(
     directory = r"C:\Users\kumar\Skin_lesion_Classification\data\raw\ISIC2018",
     labels = "inferred",
     label_mode = "categorical",
@@ -10,3 +10,5 @@ train_ds, validation_ds = keras.utils.image_dataset_from_directory(
     validation_split = 0.2,
     subset = "both"
 )
+train_ds = ds[0]
+validation_ds = ds[1]
